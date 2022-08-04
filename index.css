@@ -1,0 +1,260 @@
+body {
+  font-family: 'Sofia';
+  font-size: 22px;
+  margin: 0;
+  min-width: 250px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul>li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgb(240, 240, 240);
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f49236;
+  color: rgb(255, 255, 255);
+}
+
+/* Style the header */
+.header {
+  background-color: #f49236;
+  padding: 30px 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  background-color: aqua;
+  padding: 9px;
+  float: left;
+  font-size: 20px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 8px;
+  width: 25%;
+  background: #e463e9f5;
+  color: rgb(3, 32, 37);
+  float: center;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: rgb(188, 131, 199);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+#myVideo {
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
+  /* min-width: 50%; */
+  min-height: 100%;
+}
+
+.content {
+  /* position: fixed; */
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  border-radius: 4px;
+  background-color: #110704;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.center {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 5px 0px 10px rgb(0 0 0 / 50%);
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* Add a blue color to the author */
+.author {
+  color: rgb(20, 152, 161);
+}
+
+/* flex styles */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.video-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}

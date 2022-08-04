@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='./index.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">To Do List by Juliana</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+
+  <ul id="myUL">
+    <li>Go to the gym</li>
+    <li class="checked">Meet a friend</li>
+    <li>Learn new words</li>
+    <li>Make a call</li>
+    <li>Read a book</li>
+    <li>Clean the room</li>
+  </ul>
+
+
+  <div class="flex-container">
+
+    <img src="https://www.meme-arsenal.com/memes/6c45da8e849cf83ccfd1a30da4719ac7.jpg" alt="Paris" class="center">
+
+    <div class="video-container"> 
+      <video autoplay width="500" height="500" loop id="myVideo">
+        <source src="./1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+  </div>
+
+
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides">
+      <q>If you can make a girl laugh - you can make her do anything.</q>
+      <p class="author">- Marilyn Monroe</p>
+    </div>
+
+    <div class="mySlides">
+      <q>You cannot teach a man anything; you can only help him find it within himself.</q>
+      <p class="author">- Galileo Galilei</p>
+    </div>
+
+    <div class="mySlides">
+      <q>The first human who hurled an insult instead of a stone was the founder of civilization.</q>
+      <p class="author">- Sigmund Freud</p>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
